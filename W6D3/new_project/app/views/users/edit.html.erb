@@ -1,0 +1,11 @@
+<h1> Let's edit an existing user!!</h1>
+
+<h3> Current User-id is: <%=@user.id%> </h3>
+
+<form action="<%=user_url(@user.id)%>" method="POST">
+    <input type="hidden" name="_method" value="PATCH">
+    <label for="username">UserName</label>
+    <input id="username" type="text" value="<%=@user.username%>" name="user[username]">
+    <input type="submit" value="Update username">
+
+</form>
