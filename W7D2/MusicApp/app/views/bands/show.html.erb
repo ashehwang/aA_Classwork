@@ -1,0 +1,18 @@
+<h1>This is <%= @band.name %> 's Page!</h1>
+<br>
+<br>
+<br>
+<br>
+<h3>This band has made these following albums: </h3>
+<br>
+    <% @band.albums.each do |album| %>
+        <a href="<%=album_url(album.id)%>"><%= album.title %></a>
+        <br>
+    <% end %>
+<br>
+<br>
+<br>
+<br>
+<a href="<%= new_band_album_url(@band.id) %>">Want to add an Album?</a>
+<a href="<%= edit_band_url(@band.id) %>">Something Wrong?</a>
+<a href="<%= bands_url %>">Back to Main</a>

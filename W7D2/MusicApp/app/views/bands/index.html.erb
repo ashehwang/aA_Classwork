@@ -1,0 +1,19 @@
+<h1>All the Bands of the World!</h1>
+
+<ul>
+    <% @bands.each do |band| %>
+        <li> <a href="<%= band_url(band.id) %>"><%= band.name %></a></li>
+    <% end %>
+</ul>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="<%= new_band_url %>">Want to Add a new Band to our Cool list? XD </a>
