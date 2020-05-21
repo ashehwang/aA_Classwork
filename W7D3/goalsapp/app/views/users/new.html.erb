@@ -1,0 +1,21 @@
+<h1>Sign Up for a Productive you!!</h1>
+
+<br>
+<br>
+<form action="<%= users_url %>" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+<label for="username">Username</label>
+<input type="text" name="user[username]" id="username">
+<br>
+<br>
+<label for="password">Password</label>
+<input type="password" name="user[password]" id="password">
+<br>
+<br>
+<input type="submit" value="Sign Up">
+
+
+
+
+</form>
