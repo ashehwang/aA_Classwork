@@ -1,0 +1,59 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+
+.left-nav > ul,
+.right-nav > ul {
+    display: flex;
+}
+
+.left-nav > ul > li {
+    margin: 5px 20px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.right-nav > ul > li {
+    margin: 5px 3px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.right-nav > ul > li:last-of-type {
+    color: black;
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+    background-color: $light-gray;
+}
+
+.left-nav span {
+    padding: 5px;
+}
+
+
+.right-nav i {
+    color: black;
+    font-size: 26px;
+}
+
+.right-up {
+    background: $light-blue;
+    padding: 7px;
+}
+
+.right-up:hover {
+    background: $dark-blue;
+}
+
+.right-up li {
+    margin: 5px;
+}

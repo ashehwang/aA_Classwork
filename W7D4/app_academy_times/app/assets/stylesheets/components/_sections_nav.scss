@@ -1,0 +1,16 @@
+.globe {
+    display: flex;
+    justify-content: center;
+}
+
+.globe li {
+    padding: 5px;
+}
+
+.globe li:hover {
+    background: lightgrey;
+}
+
+#all {
+    text-decoration: underline;
+}
