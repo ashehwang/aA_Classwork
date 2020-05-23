@@ -1,0 +1,42 @@
+<h1> <%= @sub.title %></h1>
+
+<h3>Description:</h3>
+
+<p><%= @sub.description %></p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<% @sub.posts.each do |post| %>
+    <%= post.title %> :
+    <br>
+    <p class="content"> <%= post.content %> by: <%= post.user.username %>
+    <% if logged_in? && current_user.id == post.user.id %>
+        <form action="<%= post_url %>" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="hidden" name="post_id" value=<%= post.id %>>
+            <input type="submit" value="Delete this Post">
+        </form>
+        <a href="<%= edit_post_url(post.id) %>">
+        <button>Edit this Post</button></a>
+    <% end %>
+    <p>
+    <br>
+    <br>
+<% end %>
+
+
+<nav class="right">
+<a href="<%= new_sub_post_url(@sub.id) %>">Make New Post!</a>
+<br>
+<% if logged_in? && current_user.id == @sub.moderator_id %>
+    <a href="<%= edit_sub_url(@sub.id) %>">Edit This Sub</a>
+<% end %>
+</nav>

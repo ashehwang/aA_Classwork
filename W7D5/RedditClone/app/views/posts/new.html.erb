@@ -1,0 +1,26 @@
+<h3>Let's create a new post for Sub: <%= Sub.find(params[:sub_id]).title %></h3>
+<br>
+<br>
+<br>
+<form action="<%= posts_url %>" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<input type="hidden" name="post[sub_id]" value="<%= params[:sub_id] %>">
+<label>Title :
+<input type="text" name="post[title]" value="<%= @post.title %>">
+</label>
+<br>
+<br>
+<label>Url :
+<input type="text" name="post[url]" value="<%= @post.url %>">
+</label>
+<br>
+<br>
+<label>Content :
+<textarea name="post[content]" cols="30" rows="10"> <%= @post.content %> </textarea>
+</label>
+<br>
+<br>
+<input type="submit" value="Create a New Post!">
+
+
+</form>

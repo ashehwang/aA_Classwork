@@ -1,0 +1,21 @@
+<h1>Come Join Us! *'ㅅ^*</h1>
+
+<br>
+<br>
+
+<form action="<%= users_url %>" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<br>
+<br>
+    <label>Username: 
+    <input type="text" name="user[username]">
+    </label>
+<br>
+    <label>Password: 
+    <input type="password" name="user[password]">
+    </label>
+<br>
+<br>
+    <input type="submit" value="Sign Up!">
+<br>
+</form>
