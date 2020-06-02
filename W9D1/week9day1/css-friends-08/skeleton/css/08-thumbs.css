@@ -1,0 +1,15 @@
+/* PHASE 8: Thumbs */
+.friend-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.friend-list > li {
+    width: 60px;
+    margin: 3px;
+    
+}
+
+.thumb > img {
+    border-radius: 6px;
+}
