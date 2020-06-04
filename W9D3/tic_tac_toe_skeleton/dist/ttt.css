@@ -1,0 +1,70 @@
+html, body, figure, ul, li, h1 {
+    margin: 0;
+    padding: 0;
+    background: transparent; 
+    border: 0;
+    font: inherit; 
+    text-decoration: inherit;
+    text-align: inherit;
+} 
+body {
+    margin: 0 auto;
+    width: 700px; 
+}
+
+
+h1, p {
+    font-family: sans-serif;
+    font-weight: 700; 
+    font-size: 24px; 
+    padding: 10px; 
+    /* background-color: aqua; */
+    margin-left: 85px;
+}
+ul {
+    background-color: red ;
+    width: 300px;
+    border: 5px solid black; 
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;  
+}
+
+li {
+    background-color: gray;
+    width: 96px;
+    height: 96px;
+    border: 2px solid black; 
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+.x {
+    background-color: #7EA0B7;
+}
+.o {
+    background-color: #FFFD98;
+}
+
+
+.x:after {
+    content: "x";
+    font-size: 70px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.o:after {
+    content: "o";
+    font-size: 70px;
+    width: 100%;
+    display: block;
+    text-align: center;
+
+}
+.game-over {
+    background-color: antiquewhite;
+}
