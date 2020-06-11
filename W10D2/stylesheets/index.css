@@ -1,0 +1,82 @@
+html, body, h1, h2, h3, header ,nav, ul, li, div, p, form, span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    /* font-family: sans-serif; */
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Piedra', cursive;
+    text-align: inherit;
+    text-decoration: inherit;
+    background: transparent;
+    list-style: none;
+}
+
+body {
+    background-color: #9BD1E5;
+}
+
+#gabor {
+    width: 690px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.clock {
+    background-color: #6A8EAE;
+    border: 3px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.h1 {
+    font-size: 30px; 
+}
+
+.tabs {
+    /* background-color: red; */
+    box-sizing: border-box;
+    /* border: 3px solid black; */
+}
+
+.tabs-header > ul {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs-list {
+    background-color: #1F363D;
+    display: inline-block;
+    padding: 10px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 230px;
+    border: 3px solid black;
+    color: white;
+}
+.tabs-list:hover {
+    color: black;
+    font-weight: 700;
+    background-color: #F4D35E;
+    border-bottom: none;
+}   
+
+.tabs-content {
+    background-color: #F4D35E;
+    height: 200px;
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-h1 {
+    margin-top: 50px;
+    font-size: 30px;
+}
