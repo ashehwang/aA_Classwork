@@ -1,0 +1,10 @@
+1.HTML
+2.todo_redus.jsx (entry file)
+3.todo_actions.js (action maker file)
+4.todo_reducer.js(take in a state and actoin and return an appropreate state)
+5.root_reducer.js(use combinedReducer from redux to make one reducer to past into our store)
+6.store.js(create store using root_reducer.js "optional" default state and enhanser(middleware))
+7.import store.js to todo_redux.jsx (entry file) (pass store as a props)
+8.root.jsx(wrap store in a Provider(imported from react-redux)) make store gobally avalible as a prop
+9.app.jsx(create element)
+10.todo_list_container.jsx(create a prop with a state, dispatch(action))
