@@ -7,7 +7,6 @@ class Api::SessionsController < ApplicationController
       )
       if @user
         login(@user)
-        debugger
         render "api/users/show"
       else
         render json: ["Invalid username/password."], status: 401
