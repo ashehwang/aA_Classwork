@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+ html, body, header, main, div, h1, h2, h3, h4, h6, p, ul, li, ol, nav {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font: inherit;
+    outline: inherit;
+    font-family: sans-serif;
+    /* font-family: 'Piedra', cursive; */
+ }
+
+ body {
+    background-color: #36494E;
+    color: white;
+    padding: 50px;
+ }
+
+ #map-container {
+    width: 500px;
+    height: 500px;
+ }

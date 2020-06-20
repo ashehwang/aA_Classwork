@@ -1,15 +1,16 @@
-export const fetchBenches = (data) => (
+export const fetchBenches = () => (
     $.ajax({
         url: 'api/benches',
-        data
+        method: 'GET',
+        error: err => console.log(err)
     })
-)
+);
 
 export const fetchBench = (id) => (
     $.ajax({
         url: `api/benches/${id}`
     })
-)
+);
 
 export const createBench = benchform => (
     $.ajax({
@@ -17,4 +18,4 @@ export const createBench = benchform => (
         url: 'api/benches',
         data: benchform
     })
-)
+);

@@ -1,4 +1,5 @@
-class API::BenchesController < ApplicationController
+class Api::BenchesController < ApplicationController
+
     before_action :require_login, only: [:create]
 
     def index
@@ -23,4 +24,5 @@ class API::BenchesController < ApplicationController
     def bench_params
         params.require(:bench).permit(:lat, :lng, :description, :picture_url)
     end
+
 end

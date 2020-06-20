@@ -4,6 +4,8 @@ import { signup, login, logout } from './actions/session_actions';
 import configureStore from './store/store';
 import Root from "./components/root";
 
+import { fetchBenches } from './actions/bench_action';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById("root");
@@ -29,4 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.signup = signup;
   window.logout = logout;
+  window.fetchBenches = fetchBenches;
 });
